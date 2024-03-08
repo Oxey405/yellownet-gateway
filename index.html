@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YELLOWNET Gateway</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>YELLOWNET Gateway</h1>
+      <p>Plug in your Playdate and let the magic happen !</p>
+      <button id="start">My playdate is connected</button>
+      <p>⚠️ Make sure you only allow connection to trusted servers. ⚠️</p>
+
+      <div class="about">
+        <h2>About YELOWNET</h2>
+        <p>
+          YELLOWNET is a networking protocol made for the
+          <a href="https://play.date">Playdate</a> by
+          <a href="https://oxey405.com">Oxey405</a>! <br />
+          It works using WebSerial which allows webpages to communicate with
+          physical devices. YELLOWNET is a standard of communication that<br>
+          enables the Playdate to communicate with servers around the world by
+          using a <b>Gateway</b> <i>(like this one)</i> to forward packets both ways.
+        </p>
+        <h2>Why not use the Playdate's Wi-Fi chip ?</h2>
+        <p>
+          Unfortunately, the Playdate doesn't just let you have fun with the network as it's considered something sensitive.<br>
+          Although some games can access online leaderboards and the system has online features, games not published on <i>Catalog</i> cannot access Wi-Fi<span>*</span>.
+          That's why such a complex system is required for YELLOWNET to... well.. work!<br>
+          <span class="note">* Well you <i>can</i> try and write your own C Networking API implementation for the ESP32 by reverse engineering stuff <br><b>BUT</b> note that it's going to be way though and this would probably make Panic mad and we don't want to piss off Panic ♥️</span>
+        </p>
+        <h2>Is this Open-Source ? Can I contribute ?</h2>
+        <p>
+          Off course the project is open-source ! And if you have medium experience with modern Javascript and Lua you can contribute for sure!<br>
+          Every part of this system is Open-source ; the client and server libraries as well as the gateway that you can self-host by the way !
+          <a href="https://yellownet.oxey405.com" target="_blank" rel="noopener noreferrer">Website of the project</a>
+        </p>
+        <span class="note">This website and YELLOWNET are an open source project not affiliated with Panic | Copyright ©️ 2024 - Oxey405 & YELLOWNET Contributors</span>
+
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
